@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 //import { CookieService } from 'ngx-cookie-service';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './login/login.component';
 import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.component';
 import { DatePipe } from '@angular/common';
 import { AuthGuard } from './servicios/auth.guard';
@@ -41,7 +40,6 @@ import { PokemonViewComponent } from './pokemon/pokemon-view/pokemon-view.compon
   declarations: [
     AppComponent,
     ConfirmDialogComponent,
-    LoginComponent,
     PokemonListComponent,
     PokemonViewComponent
   ],
