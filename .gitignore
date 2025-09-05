@@ -15,9 +15,18 @@
 # Environment files
 /.env
 
-# Angular CLI and build artefacts
-/.angular-cli.json
+# Angular build artifacts
+/dist/
+/node_modules/
 /.ng/
+
+# IDE/editor config (opcional pero útil)
+/.vscode/
+/.idea/
+
+# OS-specific
+.DS_Store
+Thumbs.db
 
 # TypeScript cache
 *.tsbuildinfo
