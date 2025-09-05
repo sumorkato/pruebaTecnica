@@ -1,0 +1,152 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+.pageContainer{
+  margin-top: 20px !important;
+  background-color: white !important;
+  color: #545454 !important;
+}
+
+.darkBlue-color{
+  color: #002F87 !important;
+}
+
+.lightBlue-color{
+  color: #79A3DC !important;
+}
+
+.yellow-color{
+  color: #F5B333 !important;
+}
+
+.gray-color{
+  color: #545454 !important;
+}
+
+.darkBlue-bkg{
+  background-color: #002F87 !important;
+  color: white !important;
+}
+
+.lightBlue-bkg{
+  background-color: #79A3DC !important;
+  color: white !important;
+}
+
+.yellow-bkg{
+  background-color: #F5B333 !important;
+  color: #545454;
+}
+
+.gray-bkg{
+  background-color: #545454 !important;
+  color: white;
+}
+
+.lightGary-bkg{
+  background-color: #F5F2F1;
+  color: black;
+}
+
+.custom-form {
+    position: relative;
+    left: 30%;
+    bottom: -10%;
+    min-width: 200px;
+    max-width: 30%;
+    text-align: right;
+}
+.title{
+    position: relative;
+    bottom: -5%;
+    margin-left: 10%;
+}
+.center{
+    position: relative;
+    bottom: -5%;
+    width: 100%;
+    text-align: center;
+}
+.page-container{
+  position: relative;
+  top: 5%;
+  left: 5%;
+}
+.spacer {
+    flex: 1 1 auto;
+  }
+.line {
+    border-top: 1px solid rgb(185, 184, 184);
+    max-width: 89%; 
+    height: 2px;
+    padding: 0;
+    margin: 0;
+    background: rgb(185, 184, 184)
+  }
+
+.thick-line {
+    border-top: 5px solid #002f87;
+    max-width: 89%; 
+    height: 2px;
+    padding: 0;
+    margin: 0;
+    background: #002f87;
+  }
+.app-container {
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.app-sidenav-content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.mat-drawer-container {
+  background-color: white;
+  color: rgba(0, 0, 0, 0.87); 
+}
+.app-sidenav {
+  padding: 20px;
+  }
+.mat-elevation-z8{
+  width: 90%;
+  position: relative;
+}
+.mat-table {
+  overflow: auto;
+  max-height: 500px;
+}
+
+.full-width{
+  width: 100%;
+}
+
+
+html, body { height: 100%;}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+table {
+  width: 100%;
+  position: relative;
+  bottom: -5%;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.row {
+  position: relative;
+}
+.center-vertical {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.mat-form-field-type-mat-date-range-input .mat-form-field-infix{
+  width: 220px !important;
+  display: flex;
+  align-items: center;
+}

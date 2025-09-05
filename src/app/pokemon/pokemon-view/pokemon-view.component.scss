@@ -1,0 +1,44 @@
+.container {
+  &.pageContainer {
+    justify-content: center;
+    padding: 1rem;
+
+    .row {
+      margin-bottom: 1rem;
+
+      h1 {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+    .image-section {
+      display: flex;
+      gap: 1rem;
+
+      img {
+        width: 160px;
+        height: 160px;
+        object-fit: contain;
+      }
+    }
+
+    .info-section,
+    .types-section,
+    .abilities-section,
+    .stats-section {
+      margin-top: 1rem;
+
+      h3 {
+        margin: 0.5rem 0;
+      }
+
+      ul {
+        padding-left: 1.5rem;
+
+        li {
+          margin-bottom: 0.25rem;
+        }
+      }
+    }
+  }
+  }
+}

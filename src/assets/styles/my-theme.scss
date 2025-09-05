@@ -1,0 +1,102 @@
+@use '@angular/material' as mat;
+
+@include mat.core();
+
+// GAMA COLORES
+$my-primary-color: (
+    50: #fce4ec,
+    100: #f8bbd0,
+    200: #f48fb1,
+    300: #f06292,
+    400: #ec407a,
+    500: #e91e63, // Muy cercano al color de tu imagen
+    600: #d81b60,
+    700: #c2185b, // Exacto al color base
+    800: #ad1457,
+    900: #880e4f,
+    contrast: (
+      50: rgba(black, 0.87),
+      100: rgba(black, 0.87),
+      200: rgba(black, 0.87),
+      300: white,
+      400: white,
+      500: white,
+      600: white,
+      700: white,
+      800: white,
+      900: white,
+    )
+   );
+
+$my-accent-color: (
+    50: #fef6e7,
+    100: #fdedce,
+    200: #fadb9e,
+    300: #f8ca6d,
+    400: #f6b83c,
+    500: #f5b333,
+    600: #f4a60b,
+    700: #c38509,
+    800: #926407,
+    900: #614205,
+    contrast: (
+      50: rgba(black, 0.87),
+      100: rgba(black, 0.87),
+      200: rgba(black, 0.87),
+      300: white,
+      400: white,
+      500: white,
+      600: white,
+      700: white,
+      800: white,
+      900: white,
+    )
+);
+
+$my-warn-color: (
+    50: #fceae8,
+    100: #f9d4d2,
+    200: #f3aaa5,
+    300: #ed7f78,
+    400: #e8554a,
+    500: #e43d30,
+    600: #b52217,
+    700: #871912,
+    800: #5a110c,
+    900: #2d0806,
+    contrast: (
+   50: rgba(black, 0.87),
+      100: rgba(black, 0.87),
+      200: rgba(black, 0.87),
+      300: white,
+      400: white,
+      500: white,
+      600: white,
+      700: white,
+      800: white,
+      900: white,
+    )
+);
+
+
+// PALETA DE COLORES
+$my-primary: mat.define-palette($my-primary-color);
+$my-accent: mat.define-palette($my-accent-color);
+$my-warn: mat.define-palette($my-warn-color);
+// TEMA PROPIO
+$my-theme: mat.define-light-theme((
+ color: (
+   primary: $my-primary,
+   accent: $my-accent,
+   warn: $my-warn,
+ ),
+ typography: mat.define-typography-config(),
+ density: 0,
+));
+
+
+// APLICAR NUESTRO TEMA A ANGULAR
+@include mat.all-component-themes($my-theme);
+// REEMPLAZA EN ANGULAR.JSON -> STYLES
+// POR LA RUTA DEL CUSTOM THEME
+// "src/assets/styles/my-theme.scss",

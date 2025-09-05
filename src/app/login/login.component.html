@@ -1,0 +1,59 @@
+<div class="container pageContainer">
+    <br />
+    <div class="row">
+        <form  (ngSubmit)="LoginForm.valid && login()" [formGroup]="LoginForm">
+        <mat-card>
+            <mat-card-content>
+                <div class="row" style="text-align: center !important;">
+                    <div class="col-sm-12">
+                        <h1>
+                            Prueba Tecnica Finandina
+                        </h1>
+                        <hr />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6" style="text-align: center;">
+                        <label>Usuario: </label>
+                        <br />
+                        <mat-form-field class="full-width">
+                            <input matInput type="text" placeholder="Username" maxlength="150"  maxlength="150" formControlName="User">
+                            <button mat-icon-button matSuffix >
+                                <mat-icon></mat-icon>
+                            </button>
+                            <mat-error>
+                                Este campo es <strong>obligatorio</strong>
+                            </mat-error>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6" style="text-align: center;">
+                        <label>Contraseña: </label>
+                        <br />
+                        <mat-form-field class="full-width">
+                            <input matInput [type]="hide ? 'password' : 'text'" placeholder="Abc+90de" maxlength="150"  formControlName="UserPassword">
+                            <button mat-icon-button matSuffix (click)="hide = !hide">
+                                <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                            </button>
+                            <mat-error>
+                                Este campo es <strong>obligatorio</strong>
+                            </mat-error>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="row">
+                </div>
+            </mat-card-content>
+            <mat-card-actions style="display: flex; justify-content: center;">
+                <div class="row">
+                    <div class="col-sm-12" style="text-align: center !important;">
+                        <button style="width: 100px;" mat-raised-button color="primary" type="submit">Login</button>
+                        <button mat-raised-button class="lightBlue-bkg" [routerLink]="['/AddUser']">Registrarse</button>
+                    </div>
+                </div>
+            </mat-card-actions>
+        </mat-card>
+    </form>  
+    </div>    
+</div>
